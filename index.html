@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login | Done Quicks</title>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-firestore.js"></script>
+	<link rel="stylesheet" href="./styles/indexStyle.css">
+</head>
+<body>
+	<br>
+<br>
+    <div class="cont">
+        <div class="form sign-in">
+            <h2>Welcome</h2>
+            <label>
+                <span>Email</span>
+                <input id ="login_mail" type="email" />
+            </label>
+            <label>
+                <span>Password</span>
+                <input id = "login_password"type="password" />
+            </label>
+            <p class="forgot-pass">Forgot password?</p>
+            <button id="signInWithMail" class="loginbutton">Log In</button>
+           <!--  <button class="submit"></button> -->
+         
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                 
+                    <h3>Don't have an account? Please Sign up!<h3>
+                </div>
+                <div class="img__text m--in">
+                
+                    <h3>If you already has an account, just sign in.<h3>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Sign Up</span>
+                    <span class="m--in">Sign In</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <h2>Create your Account</h2>
+                <label>
+                    <span>Name</span>
+                    <input id="name" type="text" />
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input id="signup_mail" type="email" />
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input id="signup_password" type="password" />
+                </label>
+                <button id="signUp" type="button" class="submit">Sign Up</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
+
+</body>
+
+
+<script src="./js/firebase.js"></script>
+<script src="./js/emailAuth.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

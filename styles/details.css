@@ -1,0 +1,26 @@
+#heading
+{
+	text-align: center;
+}
+
+#image
+{
+	align-items: center ;
+	width: 400px;
+	height: 400px;
+	border-radius: 15px;
+}
+
+.content
+{
+	text-align: center;
+}
+
+#back
+{
+  padding: 5px;
+  background-color: blue;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+}

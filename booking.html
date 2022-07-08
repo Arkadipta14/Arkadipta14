@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking | Done Quicks</title>
+  <link rel="stylesheet" type="text/css" href="./styles/booking.css">
+  
+</head>
+<body>
+
+  <form action="reservation.php" method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="usermail" name="visitor_email" placeholder="john.doe@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <!-- <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+  </div> -->
+  <!-- <div class="elem-group inlined">
+    <label for="checkin-date">Service Date</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div> -->
+  <div id="date" class="date">
+    <div class="datelabel">
+      <p>Select Date</p>
+    </div>
+    <div class="dateOptions">
+      <button type="button">JAN 12</button>
+      <button type="button">JAN 25</button>
+      <button type="button">FEB 10</button>
+    </div>
+  </div>
+  <div id="time" class="time">
+    <div class="timelabel">
+      <p>Select Time</p>
+    </div>
+    <div class="timeOptions">
+      <button type="button">11:00 AM</button>
+      <button type="button">02:00 PM</button>
+      <button type="button">04:00 PM</button>
+    </div>
+  </div>
+ <!--  <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input type="date" id="checkout-date" name="checkout" required>
+  </div> -->
+  <!-- <div class="elem-group">
+    <label for="room-selection">Select Service</label>
+    <select id="room-selection" name="room_preference" required>
+        <option value="">Choose a Service from the list</option>
+        <option value="connecting">Haircut</option>
+        <option value="adjoining">Pedicure and Manicure</option>
+        <option value="adjacent">Body Spa</option>
+        <option value="adjacent">Threading</option>
+        <option value="adjacent">Body Massage</option>
+        <option value="adjacent">Waxing</option>
+        <option value="adjacent">Electrician</option>
+        <option value="adjacent">Plumber</option>
+        <option value="adjacent">Car Repair</option>
+        <option value="adjacent">Home Organizing</option>
+        <option value="adjacent">Pest Control</option>
+        <option value="adjacent">Carpenter</option>  
+    </select>
+  </div> -->
+  <hr>
+ <!--  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+  </div> -->
+  <button id="confirmBook" type="button">Confirm Details</button>
+  <button id="cancel" type="button">Cancel Booking</button>
+</form>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-firestore.js"></script>
+<script src="./js/firebase.js"></script>
+<script src="./js/booking.js"></script>
+
+</html>

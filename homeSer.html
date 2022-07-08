@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Services | Done Quicks</title>
+	<link rel="stylesheet" type="text/css" href="./styles/homeSer.css">
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-firestore.js"></script>
+</head>
+<body>
+<div class="heading">
+	<h1>Home Services</h1>
+</div>
+
+
+	<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <img src="https://az184419.vo.msecnd.net/ontario-colleges/Website/images/area-of-study/electrician-aos_20171106214109_0.jpg?w=466&h=261&c=3" alt="electrician" />
+    </div>
+    <div class="card-body">
+      <span class="tag tag-teal">Home</span>
+      <h4>
+        Electrician
+      </h4>
+      <p>
+        Get your electrical work done with a click
+      </p>
+      <a class=" gotoNewPage book" href="./booking.html" data-key="service" data-value="electrician">Book Now</a>
+      <a class="gotoNewPage details" href="./details.html" data-key="service" data-value="electrician">Details</a>
+      <div class="user">
+        <div class="user-info">
+          <h5>Rs 299 - Rs 699</h5>
+          <small>inclusive of all taxes</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <img src="https://www.build-review.com/wp-content/uploads/2021/03/Plumbing.jpg" alt="Plumbing" />
+    </div>
+    <div class="card-body">
+      <span class="tag tag-purple">Home</span>
+      <h4>
+        Plumber
+      </h4>
+      <p>
+        Get all your plumbing works done with a click
+      </p>
+       <a class=" gotoNewPage book" href="./booking.html" data-key="service" data-value="plumber">Book Now</a>
+       <a class="gotoNewPage details" href="./details.html" data-key="service" data-value="plumber">Details</a>
+      <div class="user">
+        <div class="user-info">
+          <h5>Rs 499 - Rs 899</h5>
+          <small>inclusive of all taxes</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <img src="https://images.squarespace-cdn.com/content/v1/5912373d46c3c48ff6f237f7/1498584923734-YLMRDX1T1L9AKAGXJ6G6/general-car-repair-CA-Motor-Works.jpg?format=1000w" alt="Car repair" />
+    </div>
+    <div class="card-body">
+      <span class="tag tag-pink">Home</span>
+      <h4>
+        Car Repair
+      </h4>
+      <p>
+        Get your car repaired with a click
+      </p>
+       <a class=" gotoNewPage book" href="./booking.html" data-key="service" data-value="car repair">Book Now</a>
+       <a class="gotoNewPage details" href="./details.html" data-key="service" data-value="car repair">Details</a>
+      <div class="user">
+        <div class="user-info">
+          <h5>Rs 399 - Rs 999</h5>
+          <small>inclusive of all taxes</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <img src="https://st.hzcdn.com/simgs/8c51f3b80f3d3e7a_4-4673/traditional-kitchen.jpg" alt="Home Organizing" />
+    </div>
+    <div class="card-body">
+      <span class="tag tag-teal">Home</span>
+      <h4>
+        Home Organizing
+      </h4>
+      <p>
+        Get your Home Organized with a click
+      </p>
+       <a class=" gotoNewPage book" href="./booking.html" data-key="service" data-value="home organizing">Book Now</a>
+       <a class="gotoNewPage details" href="./details.html" data-key="service" data-value="home organizing">Details</a>
+      <div class="user">
+        <div class="user-info">
+          <h5>Rs 299 - Rs 699</h5>
+          <small>inclusive of all taxes</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <img src="https://www.reganagency.com/wp-content/uploads/2019/11/The-Importance-of-Pest-Control-in-Libraries-e1574699832585.jpg" alt="Pest Control" />
+    </div>
+    <div class="card-body">
+      <span class="tag tag-purple">Home</span>
+      <h4>
+        Pest Control
+      </h4>
+      <p>
+        Get rid of pests from your home with a click
+      </p>
+       <a class=" gotoNewPage book" href="./booking.html" data-key="service" data-value="pest control">Book Now</a>
+       <a class="gotoNewPage details" href="./details.html" data-key="service" data-value="pest control">Details</a>
+      <div class="user">
+        <div class="user-info">
+          <h5>Rs 399</h5>
+          <small>inclusive of all taxes</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <img src="https://media.istockphoto.com/photos/carpenter-working-on-wood-craft-at-workshop-picture-id1259122940?b=1&k=20&m=1259122940&s=170667a&w=0&h=ZrAibbJkUVeBGr1h9SUamPWQz3HZ8atQqvPknCQZI84=" alt="carpenter" />
+    </div>
+    <div class="card-body">
+      <span class="tag tag-pink">Home</span>
+      <h4>
+        Carpenter
+      </h4>
+      <p>
+        Get your home's carpentry done with a click
+      </p>
+       <a class=" gotoNewPage book" href="./booking.html" data-key="service" data-value="carpenter">Book Now</a>
+       <a class="gotoNewPage details" href="./details.html" data-key="service" data-value="carpenter">Details</a>
+      <div class="user">
+        <div class="user-info">
+          <h5>Rs 399 - Rs 799</h5>
+          <small>inclusive of all taxes</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<a href="./home.html">Back to Home Page</a>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+<script src="./js/firebase.js"></script>
+<script src="./js/personal.js"></script>
+
+</html>

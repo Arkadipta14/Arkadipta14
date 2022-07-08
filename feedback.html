@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback Page | Done Quicks</title>
+  <link rel="stylesheet" type="text/css" href="./styles/feedback.css">
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-firestore.js"></script>
+
+</head>
+<body>
+
+  <h1>Enter message (optional) and click button "Send"</h1>
+<div class="wrapper centered">
+  <article class="letter">
+    <div class="side">
+      <h1>Contact us</h1>
+      <p>
+        <textarea id="fmessage" placeholder="Your message"></textarea>
+      </p>
+    </div>
+    <div class="side">
+      <p>
+        <input id="name" type="text" placeholder="Your name" >
+      </p>
+      <p>
+        <input id="email" type="email" placeholder="Your email" >
+      </p>
+      <p>
+        <button id="sendLetter">Send</button>
+        <button id="cancel">Cancel</button>
+      </p>
+    </div>
+    <h2><a href="home.html">Back to Home Page</a></h2>
+  </article>
+  <div class="envelope front"></div>
+  <div class="envelope back"></div>
+</div>
+<p class="result-message centered">Thank you for your message</p>
+
+
+
+
+</body>
+
+<script src="./js/firebase.js"></script>
+<script src="./js/feedback.js"></script>
+
+</html>

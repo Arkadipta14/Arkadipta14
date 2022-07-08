@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal Services | Done Quicks</title>
+	<link rel="stylesheet" type="text/css" href="./styles/personal.css">
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-firestore.js"></script>
+</head>
+<body>
+<div class="heading">
+	<h1>Personal Services</h1>
+</div>
+	<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <img src="https://barbarianstyle.net/wp-content/uploads/2021/04/Caesar-Haircut.jpg" alt="hairut" />
+    </div>
+    <div class="card-body">
+      <span class="tag tag-teal">Personal</span>
+      <h4>
+        Haircut
+      </h4>
+      <p>
+        Get your perfect haircut done with a click
+      </p>
+      <a class=" gotoNewPage book" href="booking.html" data-key="service" data-value="haircut">Book Now</a>
+      <a class="gotoNewPage details" href="details.html" data-key="service" data-value="haircut">Details</a>
+      <div class="user">
+        <div class="user-info">
+          <h5>Rs 299</h5>
+          <small>inclusive of all taxes</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <img src="https://miro.medium.com/max/1400/1*pKVQe7_ufTppZM0p-BYNrg.jpeg" alt="Pedicure and manicure" />
+    </div>
+    <div class="card-body">
+      <span class="tag tag-purple">Personal</span>
+      <h4>
+        Pedicure and Manicure
+      </h4>
+      <p>
+        Get topclass mani-pedis done with a click
+      </p>
+      <a class=" gotoNewPage book" href="booking.html" data-key="service" data-value="pedicure and manicure">Book Now</a>
+      <a class="gotoNewPage details" href="details.html" data-key="service" data-value="pedicure and manicure">Details</a>
+      <div class="user">
+        <div class="user-info">
+          <h5>Rs 499</h5>
+          <small>inclusive of all taxes</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <img src="https://res.cloudinary.com/urbanclap/image/upload/fl_progressive,t_medium_res_template/categories/category_v2/category_8804fad0.jpeg" alt="Skincare" />
+    </div>
+    <div class="card-body">
+      <span class="tag tag-pink">Personal</span>
+      <h4>
+        Body Spa
+      </h4>
+      <p>
+        Get salon like spa at home with a click
+      </p>
+       <a class=" gotoNewPage book" href="booking.html" data-key="service" data-value="body spa">Book Now</a>
+       <a class="gotoNewPage details" href="details.html" data-key="service" data-value="body spa">Details</a>
+      <div class="user">
+        <div class="user-info">
+          <h5>Rs 699</h5>
+          <small>inclusive of all taxes</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hbz-eyebrow-threading-index-gettyimages-1083288172.jpg?crop=1xw:1xh;center,top&resize=640:*" alt="Threading" />
+    </div>
+    <div class="card-body">
+      <span class="tag tag-teal">Personal</span>
+      <h4>
+        Threading
+      </h4>
+      <p>
+        Get your perfect eyebrow done with a click
+      </p>
+      <a class=" gotoNewPage book" href="booking.html" data-key="service" data-value="threading">Book Now</a>
+        <a class="gotoNewPage details" href="details.html" data-key="service" data-value="threading">Details</a>
+      <div class="user">
+        <div class="user-info">
+          <h5>Rs 199</h5>
+          <small>inclusive of all taxes</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <img src="https://leblissspa.in/images/body-massage-in-chennai.png" alt="Body massage" />
+    </div>
+    <div class="card-body">
+      <span class="tag tag-purple">Personal</span>
+      <h4>
+        Body Massage
+      </h4>
+      <p>
+        Get yourself relaxed with a good massage with a click
+      </p>
+       <a class=" gotoNewPage book" href="booking.html" data-key="service" data-value="body massage">Book Now</a>
+       <a class="gotoNewPage details" href="details.html" data-key="service" data-value="body massage">Details</a>
+      <div class="user">
+        <div class="user-info">
+          <h5>Rs 399</h5>
+          <small>inclusive of all taxes</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <img src="https://www.gbsbrowz.com/wp-content/uploads/2017/06/waxing.jpg" alt="waxing" />
+    </div>
+    <div class="card-body">
+      <span class="tag tag-pink">Personal</span>
+      <h4>
+        Waxing
+      </h4>
+      <p>
+        Get your waxing done with a click
+      </p>
+       <a class=" gotoNewPage book" href="booking.html" data-key="service" data-value="waxing">Book Now</a>
+       <a class="gotoNewPage details" href="details.html" data-key="service" data-value="waxing">Details</a>
+      <div class="user">
+        <div class="user-info">
+          <h5>Rs 399</h5>
+          <small>inclusive of all taxes</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="home.html">Back to Home Page</a>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+<script src="./js/firebase.js"></script>
+<script src="./js/personal.js"></script>
+</html>
